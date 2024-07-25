@@ -35,5 +35,7 @@ function moveBolinha(){
     if (xBolinha > width || xBolinha < 0){
         xvelocidadeBolinha *= -1;
     }
-    if (yBolinha >)
+    if (yBolinha > || yBolinha < 0){
+        yvelocidadeBolinha *= -1;
+    }
  }
