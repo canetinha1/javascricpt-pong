@@ -29,4 +29,4 @@ function criaBolinha(xBolinha, yBolinha,tamBolinha){
 function moveBolinha(){
     xBolinha = xvelocidadeBolinha + xBolinha;
     yBolinha = yvelocidadeBolinha + yBolinha;
-}c
+}
