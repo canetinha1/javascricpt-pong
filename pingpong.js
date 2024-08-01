@@ -11,13 +11,18 @@ function setup(){
     //aqui vou criar minha "mesa"
     createCanvas(600,400);
 }
+
 function draw(){
+    //função responsável pelo "desenho e animação da mesa"
     //aqui vou por a cor da "mesa"
     //A cor da mesa é em rgb
     background(128,128,0); 
-    //chamando a função
+    //chamando a função cria bolinha para criar a bolinha
     criaBolinha(xBolinha, yBolinha, tamBolinha);
+    //chamando a função mov bolinha
     moveBolinha();
+    //chamando a borda
+    Borda();
 }
 
 //função bolinha
@@ -30,12 +35,12 @@ function moveBolinha(){
     xBolinha = xvelocidadeBolinha + xBolinha;
     yBolinha = yvelocidadeBolinha + yBolinha;
 }
- 
- function Borde(){
+
+function Borda(){
     if (xBolinha > width || xBolinha < 0){
         xvelocidadeBolinha *= -1;
     }
-    if (yBolinha > || yBolinha < 0){
+    if (yBolinha > height || yBolinha < 0){
         yvelocidadeBolinha *= -1;
     }
- }
+}
